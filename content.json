@@ -1,0 +1,423 @@
+{
+  "settings": {
+    "name": "Ravi Prakash",
+    "brand": "Ravi Prakash",
+    "eyebrow": "Full stack developer · Lucknow, India",
+    "roles": [
+      "Full Stack Developer",
+      "Android Developer",
+      "Flutter Developer",
+      "iOS Developer",
+      "Web Designer",
+      "YouTuber"
+    ],
+    "heroIntro": "I build apps and websites that are fast, clear and easy to live with. Mobile, web, design and testing, handled end to end by one person who cares how it turns out.",
+    "heroImage": "uploads/profile.jpg",
+    "aboutTitle": "Technology, with a policy mindset.",
+    "aboutBody": "I have strong analytical and research skills, and I like turning complicated subjects into things people can act on.\n\nI have a solid foundation in technology and use it to take part in discussions on emerging issues such as artificial intelligence, cybersecurity, blockchain and data privacy, assessing how technology affects policy and helping decision-makers navigate it.\n\nI am also trained in data analysis and visualisation, which helps me interpret complex datasets, spot trends and communicate findings to a wider audience.",
+    "aboutImage": "uploads/profile.jpg",
+    "email": "w.ravi.prakash@gmail.com",
+    "phone": "8298742246",
+    "location": "Uttar Pradesh, India",
+    "availability": "Available for freelance projects",
+    "cvFile": "",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/r-avi/",
+      "github": "https://github.com/rdsravi",
+      "instagram": "https://www.instagram.com/r.avi_prakash/",
+      "facebook": "https://www.facebook.com/profile.php?id=100023365178445",
+      "youtube": ""
+    },
+    "stats": [
+      {
+        "value": "7",
+        "label": "Services offered"
+      },
+      {
+        "value": "6+",
+        "label": "Projects shipped"
+      },
+      {
+        "value": "2023",
+        "label": "RDS Group founded"
+      }
+    ],
+    "footerText": "Ravi Prakash",
+    "notifyEmail": "w.ravi.prakash@gmail.com"
+  },
+  "services": [
+    {
+      "id": "svc_dzy1e54i",
+      "slug": "android-development",
+      "icon": "phone",
+      "published": true,
+      "title": "Android Development",
+      "summary": "High-quality native and Flutter apps for Android that give users a smooth, engaging experience and help your business grow.",
+      "sections": [
+        {
+          "heading": "Project overview",
+          "text": "I will design and build an Android application tailored to your requirements: robust, scalable and visually polished, with your brand running through it."
+        },
+        {
+          "heading": "Scope of work",
+          "text": "UI/UX design for an intuitive interface. Clean, maintainable development. Rigorous testing for functionality, performance and security. Deployment to the Google Play Store and ongoing support."
+        },
+        {
+          "heading": "Timeline",
+          "text": "Delivery time depends on the size of the project. We agree on milestones up front, and the plan stays flexible as requirements evolve."
+        },
+        {
+          "heading": "Investment",
+          "text": "Pricing depends on scope and complexity. You get a clear written quote covering design, development, testing and deployment before any work starts."
+        },
+        {
+          "heading": "Why work with me",
+          "text": "Direct communication with the person doing the work, regular progress updates, on-time delivery and thorough testing before every hand-over."
+        },
+        {
+          "heading": "Next steps",
+          "text": "Send me an enquiry with a short description of what you need. I will reply with questions, a proposed plan and a quote. Work begins after approval and an initial payment of 25%."
+        }
+      ]
+    },
+    {
+      "id": "svc_197dueys",
+      "slug": "ios-development",
+      "icon": "apple",
+      "published": true,
+      "title": "iOS Development",
+      "summary": "iPhone apps built with care for the platform, from first design through to App Store launch.",
+      "sections": [
+        {
+          "heading": "Project overview",
+          "text": "I will build a high-quality iOS application that gives your users a seamless experience, designed to fit your goals and drive engagement."
+        },
+        {
+          "heading": "Scope of work",
+          "text": "UI/UX design. Clean, efficient development. Thorough testing for functionality, performance and security. Launch on the Apple App Store with post-launch support."
+        },
+        {
+          "heading": "Timeline",
+          "text": "Delivery time depends on the size of the project. We agree on milestones up front, and the plan stays flexible as requirements evolve."
+        },
+        {
+          "heading": "Investment",
+          "text": "Pricing depends on scope and complexity. You get a clear written quote covering design, development, testing and deployment before any work starts."
+        },
+        {
+          "heading": "Why work with me",
+          "text": "Direct communication with the person doing the work, regular progress updates, on-time delivery and thorough testing before every hand-over."
+        },
+        {
+          "heading": "Next steps",
+          "text": "Send me an enquiry with a short description of what you need. I will reply with questions, a proposed plan and a quote. Work begins after approval and an initial payment of 25%."
+        }
+      ]
+    },
+    {
+      "id": "svc_9ra1wsev",
+      "slug": "web-development",
+      "icon": "code",
+      "published": true,
+      "title": "Web Development",
+      "summary": "Modern, responsive websites and web apps designed to strengthen your online presence and turn visitors into customers.",
+      "sections": [
+        {
+          "heading": "Project overview",
+          "text": "A modern, responsive, user-friendly website that strengthens your online presence, engages visitors and drives conversions."
+        },
+        {
+          "heading": "Scope of work",
+          "text": "Custom design and development. Responsive layouts for every screen size. Content management integration for easy updates. SEO for visibility. Social media integration. UI/UX design. Testing and quality assurance. Training and support for maintenance."
+        },
+        {
+          "heading": "Timeline",
+          "text": "Delivery time depends on the size of the project. We agree on milestones up front, and the plan stays flexible as requirements evolve."
+        },
+        {
+          "heading": "Investment",
+          "text": "Pricing depends on scope and complexity. You get a clear written quote covering design, development, testing and deployment before any work starts."
+        },
+        {
+          "heading": "Why work with me",
+          "text": "Direct communication with the person doing the work, regular progress updates, on-time delivery and thorough testing before every hand-over."
+        },
+        {
+          "heading": "Next steps",
+          "text": "Send me an enquiry with a short description of what you need. I will reply with questions, a proposed plan and a quote. Work begins after approval and an initial payment of 25%."
+        }
+      ]
+    },
+    {
+      "id": "svc_tav0uepl",
+      "slug": "graphic-design",
+      "icon": "palette",
+      "published": true,
+      "title": "Graphic Design",
+      "summary": "Logos, brand collateral and marketing visuals that turn ideas into clear, memorable visual communication.",
+      "sections": [
+        {
+          "heading": "About the service",
+          "text": "I specialise in graphic design with a keen eye for detail, turning ideas into impactful visual communication that fits your brand."
+        },
+        {
+          "heading": "Scope of work",
+          "text": "Logo design. Branding collateral such as business cards and letterheads. Marketing materials such as brochures, flyers, posters and banners. Digital graphics including social posts, web banners and email templates. Packaging design. Custom illustration."
+        },
+        {
+          "heading": "Design process",
+          "text": "We start with an in-depth conversation about your vision and goals. I present initial concepts for feedback, then refine until the design matches what you had in mind."
+        },
+        {
+          "heading": "Investment",
+          "text": "Packages cover all design concepts, revisions and final deliverables. Get in touch for a quote that fits your needs."
+        },
+        {
+          "heading": "Why work with me",
+          "text": "Creative excellence, a client-first approach, timely delivery and clear communication from first sketch to final files."
+        }
+      ]
+    },
+    {
+      "id": "svc_eh0qzbxi",
+      "slug": "software-testing",
+      "icon": "shield",
+      "published": true,
+      "title": "Software Testing",
+      "summary": "Manual and automated testing covering functionality, performance and security, so you ship with confidence.",
+      "sections": [
+        {
+          "heading": "My approach",
+          "text": "A systematic, detail-oriented process: analyse the application, find problems, and report them with actionable guidance for fixing them."
+        },
+        {
+          "heading": "Manual testing",
+          "text": "Hands-on testing to catch usability issues, functional gaps and user-experience problems."
+        },
+        {
+          "heading": "Automated testing",
+          "text": "Automated test scripts that speed up testing and keep results consistent."
+        },
+        {
+          "heading": "Performance and security",
+          "text": "Checks on responsiveness, stability and speed under load, plus security assessments to find vulnerabilities."
+        },
+        {
+          "heading": "Regression testing",
+          "text": "Verification that new changes do not break existing features."
+        },
+        {
+          "heading": "Reporting and pricing",
+          "text": "You get detailed, transparent reports throughout. Pricing depends on scope and complexity, with a clear breakdown after we discuss your needs."
+        }
+      ]
+    },
+    {
+      "id": "svc_9f9yx7t1",
+      "slug": "remote-support",
+      "icon": "headset",
+      "published": true,
+      "title": "Remote Support",
+      "summary": "Fast, friendly technical help delivered remotely: troubleshooting, setup and guidance from wherever you are.",
+      "sections": [
+        {
+          "heading": "What it covers",
+          "text": "Diagnosing and resolving software glitches, network issues and hardware problems over chat, email, phone or remote desktop."
+        },
+        {
+          "heading": "How I work",
+          "text": "I analyse the issue, find the root cause and apply an effective fix, explaining each step in plain language so you understand what changed."
+        },
+        {
+          "heading": "Tools",
+          "text": "Remote access tools let me look at the problem directly, apply fixes and guide you through troubleshooting."
+        },
+        {
+          "heading": "Commitment",
+          "text": "Patient, courteous and focused on getting you working again. Every interaction and solution is documented for future reference."
+        }
+      ]
+    },
+    {
+      "id": "svc_a2ys8gez",
+      "slug": "gaming",
+      "icon": "gamepad",
+      "published": true,
+      "title": "Gaming",
+      "summary": "I am RP_Axel: gamer, explorer of virtual worlds and storyteller. Come and play.",
+      "sections": [
+        {
+          "heading": "Player one",
+          "text": "I am RP_Axel, a gamer with a long history of exploring virtual worlds, from first-person shooters to open-world RPGs."
+        },
+        {
+          "heading": "The journey",
+          "text": "It began in the 8-bit era with Mario and Zelda and grew into online multiplayer and competitive eSports."
+        },
+        {
+          "heading": "What drives me",
+          "text": "The thrill of discovery, the camaraderie of online communities, and the satisfaction of beating a challenge that looked impossible. Gaming taught me teamwork, strategy and perseverance."
+        },
+        {
+          "heading": "Join in",
+          "text": "Whether you are a fellow gamer, a curious beginner or just want to talk about the latest releases, say hello. Let us level up."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "prj_8qvz4kae",
+      "published": true,
+      "title": "Personal Portfolio",
+      "tags": [
+        "Web",
+        "Design"
+      ],
+      "link": "",
+      "image": "",
+      "description": "One of the most practical and memorable ways to share my work with press, collaborators and employers."
+    },
+    {
+      "id": "prj_t1y88lsj",
+      "published": true,
+      "title": "Food Delivery App",
+      "tags": [
+        "Android",
+        "Mobile"
+      ],
+      "link": "",
+      "image": "",
+      "description": "A mobile app that lets customers browse restaurant menus, order food and have it delivered to their door."
+    },
+    {
+      "id": "prj_a24z39li",
+      "published": true,
+      "title": "Hmm-Hmm Chatting App",
+      "tags": [
+        "Android",
+        "Realtime"
+      ],
+      "link": "",
+      "image": "",
+      "description": "A private chat app for sending and receiving messages quickly and simply."
+    },
+    {
+      "id": "prj_c2aqljx1",
+      "published": true,
+      "title": "E-Commerce Website",
+      "tags": [
+        "Web",
+        "Commerce"
+      ],
+      "link": "",
+      "image": "",
+      "description": "A storefront that lets startups, small businesses and large companies sell products at scale to customers worldwide."
+    },
+    {
+      "id": "prj_vmu424qq",
+      "published": true,
+      "title": "eBook Store App",
+      "tags": [
+        "Android",
+        "eBooks"
+      ],
+      "link": "",
+      "image": "",
+      "description": "An online bookstore in your pocket: browse, buy and download eBooks straight into an eBook reader."
+    },
+    {
+      "id": "prj_1ugqp474",
+      "published": true,
+      "title": "Restaurant Management System",
+      "tags": [
+        "Web",
+        "POS"
+      ],
+      "link": "",
+      "image": "",
+      "description": "Point-of-sale software built for restaurants, bars, food trucks and the wider foodservice industry."
+    }
+  ],
+  "skills": [
+    {
+      "id": "skl_dmcwhbca",
+      "name": "Flutter",
+      "level": 90
+    },
+    {
+      "id": "skl_ipw9u2vm",
+      "name": "Android",
+      "level": 80
+    },
+    {
+      "id": "skl_smgqp29e",
+      "name": "Web development",
+      "level": 80
+    },
+    {
+      "id": "skl_4edar933",
+      "name": "HTML & CSS",
+      "level": 85
+    },
+    {
+      "id": "skl_ai4vnl79",
+      "name": "JavaScript",
+      "level": 65
+    },
+    {
+      "id": "skl_e8a21um6",
+      "name": "iOS",
+      "level": 60
+    },
+    {
+      "id": "skl_vopy6oj7",
+      "name": "C",
+      "level": 70
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp_gw6w09xg",
+      "role": "Founder & Lead Developer",
+      "org": "RDS Group of Tech Services",
+      "period": "Jan 2023 – Present",
+      "text": ""
+    },
+    {
+      "id": "exp_dcwsptjl",
+      "role": "Vendor",
+      "org": "College social media & admissions",
+      "period": "Sep 2021 – Present",
+      "text": "Run all of the college's social media accounts: posting content, keeping information current, maintaining the channels and connecting with prospective students."
+    },
+    {
+      "id": "exp_ck96z2iy",
+      "role": "Full Stack Developer",
+      "org": "Freelance",
+      "period": "Current",
+      "text": "Mobile, web and design projects for clients."
+    }
+  ],
+  "education": [
+    {
+      "id": "edu_ua1qbfhb",
+      "title": "B.Tech, Information Technology",
+      "org": "AKTU, Lucknow · Institute of Technology and Management, GIDA",
+      "period": "2020 – Present"
+    },
+    {
+      "id": "edu_znnsur43",
+      "title": "Senior Secondary (BSEB, Patna)",
+      "org": "G.M. College, Bettiah",
+      "period": ""
+    },
+    {
+      "id": "edu_12x9j59y",
+      "title": "High School (BSEB, Patna)",
+      "org": "M.S. +2 High School, Motihari",
+      "period": ""
+    }
+  ],
+  "gallery": []
+}
