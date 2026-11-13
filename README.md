@@ -1,1 +1,1 @@
-# Ravi Prakash — Portfolio (GitHub Pages)
+# Ravi Prakash — Portfolio
