@@ -27,25 +27,25 @@
   function layout(c, body) {
     const s = c.settings;
     const nav = [['index.html#top', 'Home', 'rocket'], ['index.html#about', 'About', 'cpu'], ['index.html#services', 'Services', 'layers'], ['index.html#work', 'Projects', 'chart'], ['index.html#resume', 'Resume', 'pen'], ['gallery.html', 'Gallery', 'image']];
-    const initials = (s.name || 'R').split(/\s+/).map(x => x[0]).slice(0,2).join('').toUpperCase();
+    const initials = (s.name || 'R').split(/\s+/).map(x => x[0]).slice(0, 2).join('').toUpperCase();
     return `
 <a class="skip" href="#main">Skip to content</a>
 <aside class="sidebar" id="nav">
   <a class="side-brand" href="index.html#top"><span class="brand-mark">${esc(initials)}</span><span><b>${esc(s.name || s.brand)}</b><small>PORTFOLIO</small></span></a>
   <div class="side-caption">MENU</div>
   <nav class="side-links" id="links" aria-label="Main navigation">
-    ${nav.map(([h, l, ic]) => `<a href="${h}" class="${(l==='Home' && document.body.dataset.page==='home') || (l==='Gallery' && document.body.dataset.page==='gallery') ? 'active' : ''}"><span class="side-icon">${icon(ic,18)}</span><span>${l}</span><span class="side-arrow">↗</span></a>`).join('')}
+    ${nav.map(([h, l, ic]) => `<a href="${h}" class="${(l === 'Home' && document.body.dataset.page === 'home') || (l === 'Gallery' && document.body.dataset.page === 'gallery') ? 'active' : ''}"><span class="side-icon">${icon(ic, 18)}</span><span>${l}</span><span class="side-arrow">↗</span></a>`).join('')}
   </nav>
   <div class="side-bottom">
     <div class="side-availability"><i></i>${esc(s.availability || 'Open to opportunities')}</div>
     <div class="soc-row">${socials(s)}</div>
-    <a class="side-contact" href="index.html#contact">Let's work together ${icon('arrow',16)}</a>
+    <a class="side-contact" href="index.html#contact">Let's work together ${icon('arrow', 16)}</a>
     <small>© ${new Date().getFullYear()} ${esc(s.name || s.brand)}</small>
   </div>
 </aside>
-<button class="mobile-menu" id="burger" aria-label="Open navigation" aria-expanded="false">${icon('menu',22)}</button>
+<button class="mobile-menu" id="burger" aria-label="Open navigation" aria-expanded="false">${icon('menu', 22)}</button>
 <div class="site-shell"><main id="main">${body}</main>
-<footer class="foot"><div class="wrap foot-in"><div><div class="foot-brand">${esc(s.footerText || s.brand)}</div><p class="muted">Designed & built with care · © ${new Date().getFullYear()}</p></div><div class="soc-row">${socials(s)}</div><a class="to-top" href="#top" aria-label="Back to top">${icon('up',18)}<span>Back to top</span></a></div></footer></div>
+<footer class="foot"><div class="wrap foot-in"><div><div class="foot-brand">${esc(s.footerText || s.brand)}</div><p class="muted">Designed & built with care · © ${new Date().getFullYear()}</p></div><div class="soc-row">${socials(s)}</div><a class="to-top" href="#top" aria-label="Back to top">${icon('up', 18)}<span>Back to top</span></a></div></footer></div>
 <div class="nav-scrim" id="nav-scrim"></div>`;
   }
 
@@ -96,7 +96,7 @@
     const stats = (s.stats || []).filter((x) => x.value || x.label);
     document.title = s.seoTitle || `${s.name} — ${roles[0]}`;
     document.querySelector('meta[name=description]')?.setAttribute('content', s.seoDescription || s.heroIntro || '');
-    if (s.seoKeywords) { let m=document.querySelector('meta[name=keywords]'); if(!m){m=document.createElement('meta');m.name='keywords';document.head.append(m);} m.content=s.seoKeywords; }
+    if (s.seoKeywords) { let m = document.querySelector('meta[name=keywords]'); if (!m) { m = document.createElement('meta'); m.name = 'keywords'; document.head.append(m); } m.content = s.seoKeywords; }
 
     return layout(c, `
 <section class="hero" id="top">
@@ -154,12 +154,12 @@ ${services.length ? `<div class="marquee" aria-hidden="true"><div class="marquee
     <div class="sec-head reveal"><p class="kicker">Selected work</p><h2 class="h2">Things I've <em>built.</em></h2></div>
     <div class="proj-grid">
       ${projects.map((p) => {
-        const link = safeUrl(p.link);
-        const inner = `<div class="cover">${projectCover(p)}</div>
+      const link = safeUrl(p.link);
+      const inner = `<div class="cover">${projectCover(p)}</div>
           <div class="proj-body"><div class="tags">${(p.tags || []).map((t) => `<span>${esc(t)}</span>`).join('')}</div>
           <h3>${esc(p.title)}${link ? icon('up', 18) : ''}</h3><p>${esc(p.description)}</p></div>`;
-        return link ? `<a class="proj reveal" href="${esc(link)}" target="_blank" rel="noopener noreferrer">${inner}</a>` : `<article class="proj reveal">${inner}</article>`;
-      }).join('')}
+      return link ? `<a class="proj reveal" href="${esc(link)}" target="_blank" rel="noopener noreferrer">${inner}</a>` : `<article class="proj reveal">${inner}</article>`;
+    }).join('')}
     </div>
   </div>
 </section>
@@ -244,14 +244,14 @@ ${others.length ? `<section class="sec tight"><div class="wrap"><h3 class="h3">O
 
   // ───────── behaviours ─────────
   function initNav() {
-    const nav=$('#nav'), links=$('#links'), burger=$('#burger'), scrim=$('#nav-scrim');
-    const setMenu=(open)=>{nav.classList.toggle('open',open);scrim?.classList.toggle('show',open);burger.setAttribute('aria-expanded',String(open));burger.setAttribute('aria-label',open?'Close navigation':'Open navigation');};
-    burger.addEventListener('click',()=>setMenu(!nav.classList.contains('open')));
-    scrim?.addEventListener('click',()=>setMenu(false));
-    links.addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false);});
-    addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false);});
-    const activeHash=()=>{const hash=location.hash||'#top';links.querySelectorAll('a').forEach(a=>a.classList.toggle('active',a.getAttribute('href').endsWith(hash)));}
-    addEventListener('hashchange',activeHash); activeHash();
+    const nav = $('#nav'), links = $('#links'), burger = $('#burger'), scrim = $('#nav-scrim');
+    const setMenu = (open) => { nav.classList.toggle('open', open); scrim?.classList.toggle('show', open); burger.setAttribute('aria-expanded', String(open)); burger.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation'); };
+    burger.addEventListener('click', () => setMenu(!nav.classList.contains('open')));
+    scrim?.addEventListener('click', () => setMenu(false));
+    links.addEventListener('click', e => { if (e.target.closest('a')) setMenu(false); });
+    addEventListener('keydown', e => { if (e.key === 'Escape') setMenu(false); });
+    const activeHash = () => { const hash = location.hash || '#top'; links.querySelectorAll('a').forEach(a => a.classList.toggle('active', a.getAttribute('href').endsWith(hash))); }
+    addEventListener('hashchange', activeHash); activeHash();
   }
 
   function initReveal() {
@@ -291,21 +291,21 @@ ${others.length ? `<section class="sec tight"><div class="wrap"><h3 class="h3">O
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const f = form.elements;
-      ['name','email','message'].forEach(k => f[k].removeAttribute('aria-invalid'));
-      const bad=[];
-      if(!f.name.value.trim()) bad.push('name');
-      if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(f.email.value.trim())) bad.push('email');
-      if(f.message.value.trim().length<5) bad.push('message');
-      if(bad.length){bad.forEach(k=>f[k].setAttribute('aria-invalid','true'));f[bad[0]].focus();return say('Please check the highlighted fields.','err');}
-      if(f._honey.value) return say('Thank you! Your message has been sent.','ok');
-      const btn=form.querySelector('button[type=submit]'); btn.disabled=true; say('Sending…');
-      try{
-        const response=await fetch(window.RP_API_URL,{method:'POST',credentials:'include',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'inquiry',name:f.name.value.trim(),email:f.email.value.trim(),phone:f.phone.value.trim(),subject:f.subject.value.trim(),message:f.message.value.trim(),website:f._honey.value})});
-        const data=await response.json();
-        if(!response.ok||!data.success) throw new Error(data.message||'Unable to submit');
-        form.reset(); say("Thank you! Your message has been received. I'll reply soon.",'ok');
-      }catch(err){say('The contact form is temporarily unavailable. Please email '+(c.settings.email||'me')+' directly.','err');}
-      finally{btn.disabled=false;}
+      ['name', 'email', 'message'].forEach(k => f[k].removeAttribute('aria-invalid'));
+      const bad = [];
+      if (!f.name.value.trim()) bad.push('name');
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(f.email.value.trim())) bad.push('email');
+      if (f.message.value.trim().length < 5) bad.push('message');
+      if (bad.length) { bad.forEach(k => f[k].setAttribute('aria-invalid', 'true')); f[bad[0]].focus(); return say('Please check the highlighted fields.', 'err'); }
+      if (f._honey.value) return say('Thank you! Your message has been sent.', 'ok');
+      const btn = form.querySelector('button[type=submit]'); btn.disabled = true; say('Sending…');
+      try {
+        const response = await fetch(window.RP_API_URL, { method: 'POST', credentials: 'include', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ action: 'inquiry', name: f.name.value.trim(), email: f.email.value.trim(), phone: f.phone.value.trim(), subject: f.subject.value.trim(), message: f.message.value.trim(), website: f._honey.value }) });
+        const data = await response.json();
+        if (!response.ok || !data.success) throw new Error(data.message || 'Unable to submit');
+        form.reset(); say("Thank you! Your message has been received. I'll reply soon.", 'ok');
+      } catch (err) { say('The contact form is temporarily unavailable. Please email ' + (c.settings.email || 'me') + ' directly.', 'err'); }
+      finally { btn.disabled = false; }
     });
   }
 
@@ -332,7 +332,7 @@ ${others.length ? `<section class="sec tight"><div class="wrap"><h3 class="h3">O
     let c;
     try {
       let res;
-      try { res = await fetch(window.RP_API_URL + '?action=content', { cache: 'no-store' }); } catch (_) {}
+      try { res = await fetch(window.RP_API_URL + '?action=content', { cache: 'no-store' }); } catch (_) { }
       if (res && res.ok) { const payload = await res.json(); c = payload.content || payload; }
       else { res = await fetch('content.json?v=' + Date.now(), { cache: 'no-store' }); if (!res.ok) throw new Error(res.status); c = await res.json(); }
     } catch (e) {
