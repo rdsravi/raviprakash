@@ -26,27 +26,27 @@
   // ───────── layout ─────────
   function layout(c, body) {
     const s = c.settings;
-    const nav = [['index.html#about', 'About'], ['index.html#services', 'Services'], ['index.html#work', 'Work'], ['index.html#resume', 'Resume'], ['gallery.html', 'Gallery']];
+    const nav = [['index.html#top', 'Home', 'rocket'], ['index.html#about', 'About', 'cpu'], ['index.html#services', 'Services', 'layers'], ['index.html#work', 'Projects', 'chart'], ['index.html#resume', 'Resume', 'pen'], ['gallery.html', 'Gallery', 'image']];
+    const initials = (s.name || 'R').split(/\s+/).map(x => x[0]).slice(0,2).join('').toUpperCase();
     return `
 <a class="skip" href="#main">Skip to content</a>
-<header class="nav" id="nav">
-  <div class="wrap nav-in">
-    <a class="brand" href="index.html"><span class="brand-mark">${esc((s.brand || 'R').trim().slice(0, 1).toUpperCase())}</span><span>${esc(s.brand)}</span></a>
-    <nav class="links" id="links" aria-label="Main">
-      ${nav.map(([h, l]) => `<a href="${h}">${l}</a>`).join('')}
-      <a class="btn btn-sm" href="index.html#contact">Let's talk</a>
-    </nav>
-    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="links">${icon('menu', 24)}</button>
-  </div>
-</header>
-<main id="main">${body}</main>
-<footer class="foot">
-  <div class="wrap foot-in">
-    <div><div class="foot-brand">${esc(s.footerText || s.brand)}</div><p class="muted">&copy; ${new Date().getFullYear()} · All rights reserved.</p></div>
+<aside class="sidebar" id="nav">
+  <a class="side-brand" href="index.html#top"><span class="brand-mark">${esc(initials)}</span><span><b>${esc(s.name || s.brand)}</b><small>PORTFOLIO</small></span></a>
+  <div class="side-caption">MENU</div>
+  <nav class="side-links" id="links" aria-label="Main navigation">
+    ${nav.map(([h, l, ic]) => `<a href="${h}" class="${(l==='Home' && document.body.dataset.page==='home') || (l==='Gallery' && document.body.dataset.page==='gallery') ? 'active' : ''}"><span class="side-icon">${icon(ic,18)}</span><span>${l}</span><span class="side-arrow">↗</span></a>`).join('')}
+  </nav>
+  <div class="side-bottom">
+    <div class="side-availability"><i></i>${esc(s.availability || 'Open to opportunities')}</div>
     <div class="soc-row">${socials(s)}</div>
-    <a class="to-top" href="#top" aria-label="Back to top">${icon('up', 18)}<span>Back to top</span></a>
+    <a class="side-contact" href="index.html#contact">Let's work together ${icon('arrow',16)}</a>
+    <small>© ${new Date().getFullYear()} ${esc(s.name || s.brand)}</small>
   </div>
-</footer>`;
+</aside>
+<button class="mobile-menu" id="burger" aria-label="Open navigation" aria-expanded="false">${icon('menu',22)}</button>
+<div class="site-shell"><main id="main">${body}</main>
+<footer class="foot"><div class="wrap foot-in"><div><div class="foot-brand">${esc(s.footerText || s.brand)}</div><p class="muted">Designed & built with care · © ${new Date().getFullYear()}</p></div><div class="soc-row">${socials(s)}</div><a class="to-top" href="#top" aria-label="Back to top">${icon('up',18)}<span>Back to top</span></a></div></footer></div>
+<div class="nav-scrim" id="nav-scrim"></div>`;
   }
 
   function contactSection(s) {
@@ -94,8 +94,9 @@
     const cv = safeUrl(s.cvFile);
     const roles = s.roles?.length ? s.roles : ['Developer'];
     const stats = (s.stats || []).filter((x) => x.value || x.label);
-    document.title = `${s.name} — ${roles[0]}`;
-    document.querySelector('meta[name=description]')?.setAttribute('content', s.heroIntro || '');
+    document.title = s.seoTitle || `${s.name} — ${roles[0]}`;
+    document.querySelector('meta[name=description]')?.setAttribute('content', s.seoDescription || s.heroIntro || '');
+    if (s.seoKeywords) { let m=document.querySelector('meta[name=keywords]'); if(!m){m=document.createElement('meta');m.name='keywords';document.head.append(m);} m.content=s.seoKeywords; }
 
     return layout(c, `
 <section class="hero" id="top">
@@ -243,13 +244,14 @@ ${others.length ? `<section class="sec tight"><div class="wrap"><h3 class="h3">O
 
   // ───────── behaviours ─────────
   function initNav() {
-    const nav = $('#nav'), links = $('#links'), burger = $('#burger');
-    const onScroll = () => nav.classList.toggle('stuck', scrollY > 12);
-    addEventListener('scroll', onScroll, { passive: true }); onScroll();
-    const setMenu = (o) => { links.classList.toggle('open', o); burger.setAttribute('aria-expanded', String(o)); };
-    burger.addEventListener('click', () => setMenu(!links.classList.contains('open')));
-    links.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
-    addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+    const nav=$('#nav'), links=$('#links'), burger=$('#burger'), scrim=$('#nav-scrim');
+    const setMenu=(open)=>{nav.classList.toggle('open',open);scrim?.classList.toggle('show',open);burger.setAttribute('aria-expanded',String(open));burger.setAttribute('aria-label',open?'Close navigation':'Open navigation');};
+    burger.addEventListener('click',()=>setMenu(!nav.classList.contains('open')));
+    scrim?.addEventListener('click',()=>setMenu(false));
+    links.addEventListener('click',e=>{if(e.target.closest('a'))setMenu(false);});
+    addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false);});
+    const activeHash=()=>{const hash=location.hash||'#top';links.querySelectorAll('a').forEach(a=>a.classList.toggle('active',a.getAttribute('href').endsWith(hash)));}
+    addEventListener('hashchange',activeHash); activeHash();
   }
 
   function initReveal() {
@@ -278,49 +280,32 @@ ${others.length ? `<section class="sec tight"><div class="wrap"><h3 class="h3">O
     setTimeout(tick, 1800);
   }
 
-  // Enquiries are emailed by FormSubmit (https://formsubmit.co), a free form-to-email service
-  // that needs no server. The destination address comes from content.json (Admin → Site content).
+  // Contact enquiries are stored by the first-party PHP API when configured.
   function initForm(c) {
     const form = $('#enquiry');
     if (!form) return;
-    const to = (c.settings.notifyEmail || c.settings.email || '').trim();
     const status = $('#form-status');
     const subj = new URLSearchParams(location.search).get('subject');
     if (subj) form.elements.subject.value = subj.slice(0, 160);
     const say = (m, k) => { status.textContent = m; status.className = 'form-status ' + (k || ''); };
-
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
       const f = form.elements;
-      ['name', 'email', 'message'].forEach((k) => f[k].removeAttribute('aria-invalid'));
-      const bad = [];
-      if (!f.name.value.trim()) bad.push('name');
-      if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(f.email.value.trim())) bad.push('email');
-      if (f.message.value.trim().length < 5) bad.push('message');
-      if (bad.length) { bad.forEach((k) => f[k].setAttribute('aria-invalid', 'true')); f[bad[0]].focus(); return say('Please check the highlighted fields.', 'err'); }
-      if (f._honey.value) return say('Thank you! Your message has been sent.', 'ok'); // bot: pretend success
-      if (!to) return say('Contact form is not set up yet. Please email me directly.', 'err');
-
-      const btn = form.querySelector('button[type=submit]');
-      btn.disabled = true; say('Sending…');
-      try {
-        const res = await fetch('https://formsubmit.co/ajax/' + encodeURIComponent(to), {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({
-            name: f.name.value.trim(), email: f.email.value.trim(), phone: f.phone.value.trim(),
-            subject: f.subject.value.trim(), message: f.message.value.trim(),
-            _subject: `[Portfolio] ${f.subject.value.trim() || 'New enquiry'} — ${f.name.value.trim()}`,
-            _template: 'table', _captcha: 'false', _honey: '',
-          }),
-        });
-        const data = await res.json().catch(() => ({}));
-        if (!res.ok || String(data.success) === 'false') throw new Error(data.message || 'send failed');
-        form.reset();
-        say("Thank you! Your message has been sent and I'll reply soon.", 'ok');
-      } catch (err) {
-        say('Could not send right now. Please email me at ' + (c.settings.email || to) + '.', 'err');
-      } finally { btn.disabled = false; }
+      ['name','email','message'].forEach(k => f[k].removeAttribute('aria-invalid'));
+      const bad=[];
+      if(!f.name.value.trim()) bad.push('name');
+      if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(f.email.value.trim())) bad.push('email');
+      if(f.message.value.trim().length<5) bad.push('message');
+      if(bad.length){bad.forEach(k=>f[k].setAttribute('aria-invalid','true'));f[bad[0]].focus();return say('Please check the highlighted fields.','err');}
+      if(f._honey.value) return say('Thank you! Your message has been sent.','ok');
+      const btn=form.querySelector('button[type=submit]'); btn.disabled=true; say('Sending…');
+      try{
+        const response=await fetch(window.RP_API_URL,{method:'POST',credentials:'include',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'inquiry',name:f.name.value.trim(),email:f.email.value.trim(),phone:f.phone.value.trim(),subject:f.subject.value.trim(),message:f.message.value.trim(),website:f._honey.value})});
+        const data=await response.json();
+        if(!response.ok||!data.success) throw new Error(data.message||'Unable to submit');
+        form.reset(); say("Thank you! Your message has been received. I'll reply soon.",'ok');
+      }catch(err){say('The contact form is temporarily unavailable. Please email '+(c.settings.email||'me')+' directly.','err');}
+      finally{btn.disabled=false;}
     });
   }
 
@@ -346,9 +331,10 @@ ${others.length ? `<section class="sec tight"><div class="wrap"><h3 class="h3">O
     const app = $('#app');
     let c;
     try {
-      const res = await fetch('content.json?v=' + Date.now(), { cache: 'no-store' });
-      if (!res.ok) throw new Error(res.status);
-      c = await res.json();
+      let res;
+      try { res = await fetch(window.RP_API_URL + '?action=content', { cache: 'no-store' }); } catch (_) {}
+      if (res && res.ok) { const payload = await res.json(); c = payload.content || payload; }
+      else { res = await fetch('content.json?v=' + Date.now(), { cache: 'no-store' }); if (!res.ok) throw new Error(res.status); c = await res.json(); }
     } catch (e) {
       app.innerHTML = '<p class="boot">Could not load site content. Please refresh the page.</p>';
       return;
