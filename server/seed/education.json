@@ -1,0 +1,26 @@
+[
+    {
+        "id": "edu_ua1qbfhb",
+        "title": "B.Tech, Information Technology",
+        "org": "AKTU, Lucknow · Institute of Technology and Management, GIDA",
+        "period": "2020 – Present",
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "edu_znnsur43",
+        "title": "Senior Secondary (BSEB, Patna)",
+        "org": "G.M. College, Bettiah",
+        "period": "",
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "edu_12x9j59y",
+        "title": "High School (BSEB, Patna)",
+        "org": "M.S. +2 High School, Motihari",
+        "period": "",
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    }
+]

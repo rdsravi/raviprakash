@@ -1,0 +1,7 @@
+{
+  "name": "portfolio-tests",
+  "private": true,
+  "description": "End-to-end tests for the portfolio website, admin panel and PHP API",
+  "scripts": { "test": "bash run_all.sh" },
+  "devDependencies": { "jsdom": "^26.0.0" }
+}

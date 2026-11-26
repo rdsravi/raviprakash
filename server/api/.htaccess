@@ -1,0 +1,10 @@
+# API: JSON only, never cached by shared caches unless the endpoint says so
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+</IfModule>
+# Let PHP see the Authorization/Origin headers on all hosts
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTP:Authorization} .
+  RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+</IfModule>

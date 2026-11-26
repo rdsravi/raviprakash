@@ -1,8 +1,13 @@
 {
   "settings": {
     "name": "Ravi Prakash",
-    "brand": "Ravi Prakash",
+    "siteName": "Ravi Prakash",
+    "siteTitle": "Ravi Prakash | Full Stack Developer",
+    "designation": "Full Stack Developer",
     "eyebrow": "Full stack developer · Lucknow, India",
+    "availability": "Available for freelance projects",
+    "heroHeading": "I build apps and websites that are fast, clear and easy to live with.",
+    "heroIntro": "Mobile, web, design and testing, handled end to end by one person who cares how it turns out.",
     "roles": [
       "Full Stack Developer",
       "Android Developer",
@@ -11,23 +16,7 @@
       "Web Designer",
       "YouTuber"
     ],
-    "heroIntro": "I build apps and websites that are fast, clear and easy to live with. Mobile, web, design and testing, handled end to end by one person who cares how it turns out.",
     "heroImage": "uploads/profile.jpg",
-    "aboutTitle": "Technology, with a policy mindset.",
-    "aboutBody": "I have strong analytical and research skills, and I like turning complicated subjects into things people can act on.\n\nI have a solid foundation in technology and use it to take part in discussions on emerging issues such as artificial intelligence, cybersecurity, blockchain and data privacy, assessing how technology affects policy and helping decision-makers navigate it.\n\nI am also trained in data analysis and visualisation, which helps me interpret complex datasets, spot trends and communicate findings to a wider audience.",
-    "aboutImage": "uploads/profile.jpg",
-    "email": "w.ravi.prakash@gmail.com",
-    "phone": "8298742246",
-    "location": "Uttar Pradesh, India",
-    "availability": "Available for freelance projects",
-    "cvFile": "",
-    "social": {
-      "linkedin": "https://www.linkedin.com/in/r-avi/",
-      "github": "https://github.com/rdsravi",
-      "instagram": "https://www.instagram.com/r.avi_prakash/",
-      "facebook": "https://www.facebook.com/profile.php?id=100023365178445",
-      "youtube": ""
-    },
     "stats": [
       {
         "value": "7",
@@ -42,16 +31,41 @@
         "label": "RDS Group founded"
       }
     ],
-    "footerText": "Ravi Prakash",
-    "notifyEmail": "w.ravi.prakash@gmail.com"
+    "aboutTitle": "Technology, with a policy mindset.",
+    "aboutBody": "I have strong analytical and research skills, and I like turning complicated subjects into things people can act on.\n\nI have a solid foundation in technology and use it to take part in discussions on emerging issues such as artificial intelligence, cybersecurity, blockchain and data privacy, assessing how technology affects policy and helping decision-makers navigate it.\n\nI am also trained in data analysis and visualisation, which helps me interpret complex datasets, spot trends and communicate findings to a wider audience.",
+    "aboutImage": "uploads/profile.jpg",
+    "interests": [
+      "Artificial intelligence",
+      "Cybersecurity",
+      "Blockchain",
+      "Data privacy",
+      "Data analysis and visualisation",
+      "Technology policy",
+      "Gaming"
+    ],
+    "email": "w.ravi.prakash@gmail.com",
+    "phone": "8298742246",
+    "location": "Uttar Pradesh, India",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/r-avi/",
+      "github": "https://github.com/rdsravi",
+      "instagram": "https://www.instagram.com/r.avi_prakash/",
+      "facebook": "https://www.facebook.com/profile.php?id=100023365178445",
+      "youtube": ""
+    },
+    "cvFile": "",
+    "defaultTheme": "system",
+    "seoTitle": "Ravi Prakash | Full Stack Developer",
+    "seoDescription": "Portfolio of Ravi Prakash: full stack developer, android developer, flutter developer, ios developer.",
+    "seoKeywords": "Ravi Prakash, Full Stack Developer, Android Developer, Flutter Developer, iOS Developer, Web Designer",
+    "footerText": "Ravi Prakash"
   },
   "services": [
     {
       "id": "svc_dzy1e54i",
+      "title": "Android Development",
       "slug": "android-development",
       "icon": "phone",
-      "published": true,
-      "title": "Android Development",
       "summary": "High-quality native and Flutter apps for Android that give users a smooth, engaging experience and help your business grow.",
       "sections": [
         {
@@ -78,14 +92,14 @@
           "heading": "Next steps",
           "text": "Send me an enquiry with a short description of what you need. I will reply with questions, a proposed plan and a quote. Work begins after approval and an initial payment of 25%."
         }
-      ]
+      ],
+      "published": true
     },
     {
       "id": "svc_197dueys",
+      "title": "iOS Development",
       "slug": "ios-development",
       "icon": "apple",
-      "published": true,
-      "title": "iOS Development",
       "summary": "iPhone apps built with care for the platform, from first design through to App Store launch.",
       "sections": [
         {
@@ -112,14 +126,14 @@
           "heading": "Next steps",
           "text": "Send me an enquiry with a short description of what you need. I will reply with questions, a proposed plan and a quote. Work begins after approval and an initial payment of 25%."
         }
-      ]
+      ],
+      "published": true
     },
     {
       "id": "svc_9ra1wsev",
+      "title": "Web Development",
       "slug": "web-development",
       "icon": "code",
-      "published": true,
-      "title": "Web Development",
       "summary": "Modern, responsive websites and web apps designed to strengthen your online presence and turn visitors into customers.",
       "sections": [
         {
@@ -146,14 +160,14 @@
           "heading": "Next steps",
           "text": "Send me an enquiry with a short description of what you need. I will reply with questions, a proposed plan and a quote. Work begins after approval and an initial payment of 25%."
         }
-      ]
+      ],
+      "published": true
     },
     {
       "id": "svc_tav0uepl",
+      "title": "Graphic Design",
       "slug": "graphic-design",
       "icon": "palette",
-      "published": true,
-      "title": "Graphic Design",
       "summary": "Logos, brand collateral and marketing visuals that turn ideas into clear, memorable visual communication.",
       "sections": [
         {
@@ -176,14 +190,14 @@
           "heading": "Why work with me",
           "text": "Creative excellence, a client-first approach, timely delivery and clear communication from first sketch to final files."
         }
-      ]
+      ],
+      "published": true
     },
     {
       "id": "svc_eh0qzbxi",
+      "title": "Software Testing",
       "slug": "software-testing",
       "icon": "shield",
-      "published": true,
-      "title": "Software Testing",
       "summary": "Manual and automated testing covering functionality, performance and security, so you ship with confidence.",
       "sections": [
         {
@@ -210,14 +224,14 @@
           "heading": "Reporting and pricing",
           "text": "You get detailed, transparent reports throughout. Pricing depends on scope and complexity, with a clear breakdown after we discuss your needs."
         }
-      ]
+      ],
+      "published": true
     },
     {
       "id": "svc_9f9yx7t1",
+      "title": "Remote Support",
       "slug": "remote-support",
       "icon": "headset",
-      "published": true,
-      "title": "Remote Support",
       "summary": "Fast, friendly technical help delivered remotely: troubleshooting, setup and guidance from wherever you are.",
       "sections": [
         {
@@ -236,14 +250,14 @@
           "heading": "Commitment",
           "text": "Patient, courteous and focused on getting you working again. Every interaction and solution is documented for future reference."
         }
-      ]
+      ],
+      "published": true
     },
     {
       "id": "svc_a2ys8gez",
+      "title": "Gaming",
       "slug": "gaming",
       "icon": "gamepad",
-      "published": true,
-      "title": "Gaming",
       "summary": "I am RP_Axel: gamer, explorer of virtual worlds and storyteller. Come and play.",
       "sections": [
         {
@@ -262,118 +276,138 @@
           "heading": "Join in",
           "text": "Whether you are a fellow gamer, a curious beginner or just want to talk about the latest releases, say hello. Let us level up."
         }
-      ]
+      ],
+      "published": true
     }
   ],
   "projects": [
     {
       "id": "prj_8qvz4kae",
-      "published": true,
       "title": "Personal Portfolio",
+      "description": "One of the most practical and memorable ways to share my work with press, collaborators and employers.",
       "tags": [
         "Web",
         "Design"
       ],
-      "link": "",
+      "liveUrl": "",
+      "githubUrl": "",
       "image": "",
-      "description": "One of the most practical and memorable ways to share my work with press, collaborators and employers."
+      "featured": true,
+      "published": true
     },
     {
       "id": "prj_t1y88lsj",
-      "published": true,
       "title": "Food Delivery App",
+      "description": "A mobile app that lets customers browse restaurant menus, order food and have it delivered to their door.",
       "tags": [
         "Android",
         "Mobile"
       ],
-      "link": "",
+      "liveUrl": "",
+      "githubUrl": "",
       "image": "",
-      "description": "A mobile app that lets customers browse restaurant menus, order food and have it delivered to their door."
+      "featured": true,
+      "published": true
     },
     {
       "id": "prj_a24z39li",
-      "published": true,
       "title": "Hmm-Hmm Chatting App",
+      "description": "A private chat app for sending and receiving messages quickly and simply.",
       "tags": [
         "Android",
         "Realtime"
       ],
-      "link": "",
+      "liveUrl": "",
+      "githubUrl": "",
       "image": "",
-      "description": "A private chat app for sending and receiving messages quickly and simply."
+      "featured": true,
+      "published": true
     },
     {
       "id": "prj_c2aqljx1",
-      "published": true,
       "title": "E-Commerce Website",
+      "description": "A storefront that lets startups, small businesses and large companies sell products at scale to customers worldwide.",
       "tags": [
         "Web",
         "Commerce"
       ],
-      "link": "",
+      "liveUrl": "",
+      "githubUrl": "",
       "image": "",
-      "description": "A storefront that lets startups, small businesses and large companies sell products at scale to customers worldwide."
+      "featured": false,
+      "published": true
     },
     {
       "id": "prj_vmu424qq",
-      "published": true,
       "title": "eBook Store App",
+      "description": "An online bookstore in your pocket: browse, buy and download eBooks straight into an eBook reader.",
       "tags": [
         "Android",
         "eBooks"
       ],
-      "link": "",
+      "liveUrl": "",
+      "githubUrl": "",
       "image": "",
-      "description": "An online bookstore in your pocket: browse, buy and download eBooks straight into an eBook reader."
+      "featured": false,
+      "published": true
     },
     {
       "id": "prj_1ugqp474",
-      "published": true,
       "title": "Restaurant Management System",
+      "description": "Point-of-sale software built for restaurants, bars, food trucks and the wider foodservice industry.",
       "tags": [
         "Web",
         "POS"
       ],
-      "link": "",
+      "liveUrl": "",
+      "githubUrl": "",
       "image": "",
-      "description": "Point-of-sale software built for restaurants, bars, food trucks and the wider foodservice industry."
+      "featured": false,
+      "published": true
     }
   ],
   "skills": [
     {
       "id": "skl_dmcwhbca",
       "name": "Flutter",
-      "level": 90
+      "level": 90,
+      "category": "Mobile"
     },
     {
       "id": "skl_ipw9u2vm",
       "name": "Android",
-      "level": 80
+      "level": 80,
+      "category": "Mobile"
     },
     {
       "id": "skl_smgqp29e",
       "name": "Web development",
-      "level": 80
+      "level": 80,
+      "category": "Web"
     },
     {
       "id": "skl_4edar933",
       "name": "HTML & CSS",
-      "level": 85
+      "level": 85,
+      "category": "Web"
     },
     {
       "id": "skl_ai4vnl79",
       "name": "JavaScript",
-      "level": 65
+      "level": 65,
+      "category": "Web"
     },
     {
       "id": "skl_e8a21um6",
       "name": "iOS",
-      "level": 60
+      "level": 60,
+      "category": "Mobile"
     },
     {
       "id": "skl_vopy6oj7",
       "name": "C",
-      "level": 70
+      "level": 70,
+      "category": "Programming"
     }
   ],
   "experience": [
@@ -419,5 +453,8 @@
       "period": ""
     }
   ],
-  "gallery": []
+  "achievements": [],
+  "testimonials": [],
+  "gallery": [],
+  "version": "static"
 }

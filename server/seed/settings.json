@@ -1,0 +1,62 @@
+{
+    "name": "Ravi Prakash",
+    "siteName": "Ravi Prakash",
+    "siteTitle": "Ravi Prakash | Full Stack Developer",
+    "designation": "Full Stack Developer",
+    "eyebrow": "Full stack developer · Lucknow, India",
+    "availability": "Available for freelance projects",
+    "heroHeading": "I build apps and websites that are fast, clear and easy to live with.",
+    "heroIntro": "Mobile, web, design and testing, handled end to end by one person who cares how it turns out.",
+    "roles": [
+        "Full Stack Developer",
+        "Android Developer",
+        "Flutter Developer",
+        "iOS Developer",
+        "Web Designer",
+        "YouTuber"
+    ],
+    "heroImage": "uploads/profile.jpg",
+    "stats": [
+        {
+            "value": "7",
+            "label": "Services offered"
+        },
+        {
+            "value": "6+",
+            "label": "Projects shipped"
+        },
+        {
+            "value": "2023",
+            "label": "RDS Group founded"
+        }
+    ],
+    "aboutTitle": "Technology, with a policy mindset.",
+    "aboutBody": "I have strong analytical and research skills, and I like turning complicated subjects into things people can act on.\n\nI have a solid foundation in technology and use it to take part in discussions on emerging issues such as artificial intelligence, cybersecurity, blockchain and data privacy, assessing how technology affects policy and helping decision-makers navigate it.\n\nI am also trained in data analysis and visualisation, which helps me interpret complex datasets, spot trends and communicate findings to a wider audience.",
+    "aboutImage": "uploads/profile.jpg",
+    "interests": [
+        "Artificial intelligence",
+        "Cybersecurity",
+        "Blockchain",
+        "Data privacy",
+        "Data analysis and visualisation",
+        "Technology policy",
+        "Gaming"
+    ],
+    "email": "w.ravi.prakash@gmail.com",
+    "phone": "8298742246",
+    "location": "Uttar Pradesh, India",
+    "notifyEmail": "w.ravi.prakash@gmail.com",
+    "social": {
+        "linkedin": "https://www.linkedin.com/in/r-avi/",
+        "github": "https://github.com/rdsravi",
+        "instagram": "https://www.instagram.com/r.avi_prakash/",
+        "facebook": "https://www.facebook.com/profile.php?id=100023365178445",
+        "youtube": ""
+    },
+    "cvFile": "",
+    "defaultTheme": "system",
+    "seoTitle": "Ravi Prakash | Full Stack Developer",
+    "seoDescription": "Portfolio of Ravi Prakash: full stack developer, android developer, flutter developer, ios developer.",
+    "seoKeywords": "Ravi Prakash, Full Stack Developer, Android Developer, Flutter Developer, iOS Developer, Web Designer",
+    "footerText": "Ravi Prakash"
+}

@@ -1,0 +1,58 @@
+[
+    {
+        "id": "skl_dmcwhbca",
+        "name": "Flutter",
+        "level": 90,
+        "category": "Mobile",
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "skl_ipw9u2vm",
+        "name": "Android",
+        "level": 80,
+        "category": "Mobile",
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "skl_smgqp29e",
+        "name": "Web development",
+        "level": 80,
+        "category": "Web",
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "skl_4edar933",
+        "name": "HTML & CSS",
+        "level": 85,
+        "category": "Web",
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "skl_ai4vnl79",
+        "name": "JavaScript",
+        "level": 65,
+        "category": "Web",
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "skl_e8a21um6",
+        "name": "iOS",
+        "level": 60,
+        "category": "Mobile",
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "skl_vopy6oj7",
+        "name": "C",
+        "level": 70,
+        "category": "Programming",
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    }
+]

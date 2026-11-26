@@ -1,0 +1,98 @@
+[
+    {
+        "id": "prj_8qvz4kae",
+        "title": "Personal Portfolio",
+        "description": "One of the most practical and memorable ways to share my work with press, collaborators and employers.",
+        "tags": [
+            "Web",
+            "Design"
+        ],
+        "liveUrl": "",
+        "githubUrl": "",
+        "image": "",
+        "featured": true,
+        "published": true,
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "prj_t1y88lsj",
+        "title": "Food Delivery App",
+        "description": "A mobile app that lets customers browse restaurant menus, order food and have it delivered to their door.",
+        "tags": [
+            "Android",
+            "Mobile"
+        ],
+        "liveUrl": "",
+        "githubUrl": "",
+        "image": "",
+        "featured": true,
+        "published": true,
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "prj_a24z39li",
+        "title": "Hmm-Hmm Chatting App",
+        "description": "A private chat app for sending and receiving messages quickly and simply.",
+        "tags": [
+            "Android",
+            "Realtime"
+        ],
+        "liveUrl": "",
+        "githubUrl": "",
+        "image": "",
+        "featured": true,
+        "published": true,
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "prj_c2aqljx1",
+        "title": "E-Commerce Website",
+        "description": "A storefront that lets startups, small businesses and large companies sell products at scale to customers worldwide.",
+        "tags": [
+            "Web",
+            "Commerce"
+        ],
+        "liveUrl": "",
+        "githubUrl": "",
+        "image": "",
+        "featured": false,
+        "published": true,
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "prj_vmu424qq",
+        "title": "eBook Store App",
+        "description": "An online bookstore in your pocket: browse, buy and download eBooks straight into an eBook reader.",
+        "tags": [
+            "Android",
+            "eBooks"
+        ],
+        "liveUrl": "",
+        "githubUrl": "",
+        "image": "",
+        "featured": false,
+        "published": true,
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "prj_1ugqp474",
+        "title": "Restaurant Management System",
+        "description": "Point-of-sale software built for restaurants, bars, food trucks and the wider foodservice industry.",
+        "tags": [
+            "Web",
+            "POS"
+        ],
+        "liveUrl": "",
+        "githubUrl": "",
+        "image": "",
+        "featured": false,
+        "published": true,
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    }
+]

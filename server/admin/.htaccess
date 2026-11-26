@@ -1,0 +1,10 @@
+# Admin panel: strict CSP (the pages use no inline scripts or styles), never cached, never indexed.
+<IfModule mod_headers.c>
+  Header always set Content-Security-Policy "default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' https: data: blob:; connect-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'"
+  Header always set X-Robots-Tag "noindex, nofollow"
+  Header always set X-Frame-Options "DENY"
+  Header always set Referrer-Policy "same-origin"
+  <FilesMatch "\.html$">
+    Header always set Cache-Control "no-store"
+  </FilesMatch>
+</IfModule>

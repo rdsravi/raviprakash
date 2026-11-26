@@ -1,0 +1,234 @@
+[
+    {
+        "id": "svc_dzy1e54i",
+        "title": "Android Development",
+        "slug": "android-development",
+        "icon": "phone",
+        "summary": "High-quality native and Flutter apps for Android that give users a smooth, engaging experience and help your business grow.",
+        "sections": [
+            {
+                "heading": "Project overview",
+                "text": "I will design and build an Android application tailored to your requirements: robust, scalable and visually polished, with your brand running through it."
+            },
+            {
+                "heading": "Scope of work",
+                "text": "UI/UX design for an intuitive interface. Clean, maintainable development. Rigorous testing for functionality, performance and security. Deployment to the Google Play Store and ongoing support."
+            },
+            {
+                "heading": "Timeline",
+                "text": "Delivery time depends on the size of the project. We agree on milestones up front, and the plan stays flexible as requirements evolve."
+            },
+            {
+                "heading": "Investment",
+                "text": "Pricing depends on scope and complexity. You get a clear written quote covering design, development, testing and deployment before any work starts."
+            },
+            {
+                "heading": "Why work with me",
+                "text": "Direct communication with the person doing the work, regular progress updates, on-time delivery and thorough testing before every hand-over."
+            },
+            {
+                "heading": "Next steps",
+                "text": "Send me an enquiry with a short description of what you need. I will reply with questions, a proposed plan and a quote. Work begins after approval and an initial payment of 25%."
+            }
+        ],
+        "published": true,
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "svc_197dueys",
+        "title": "iOS Development",
+        "slug": "ios-development",
+        "icon": "apple",
+        "summary": "iPhone apps built with care for the platform, from first design through to App Store launch.",
+        "sections": [
+            {
+                "heading": "Project overview",
+                "text": "I will build a high-quality iOS application that gives your users a seamless experience, designed to fit your goals and drive engagement."
+            },
+            {
+                "heading": "Scope of work",
+                "text": "UI/UX design. Clean, efficient development. Thorough testing for functionality, performance and security. Launch on the Apple App Store with post-launch support."
+            },
+            {
+                "heading": "Timeline",
+                "text": "Delivery time depends on the size of the project. We agree on milestones up front, and the plan stays flexible as requirements evolve."
+            },
+            {
+                "heading": "Investment",
+                "text": "Pricing depends on scope and complexity. You get a clear written quote covering design, development, testing and deployment before any work starts."
+            },
+            {
+                "heading": "Why work with me",
+                "text": "Direct communication with the person doing the work, regular progress updates, on-time delivery and thorough testing before every hand-over."
+            },
+            {
+                "heading": "Next steps",
+                "text": "Send me an enquiry with a short description of what you need. I will reply with questions, a proposed plan and a quote. Work begins after approval and an initial payment of 25%."
+            }
+        ],
+        "published": true,
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "svc_9ra1wsev",
+        "title": "Web Development",
+        "slug": "web-development",
+        "icon": "code",
+        "summary": "Modern, responsive websites and web apps designed to strengthen your online presence and turn visitors into customers.",
+        "sections": [
+            {
+                "heading": "Project overview",
+                "text": "A modern, responsive, user-friendly website that strengthens your online presence, engages visitors and drives conversions."
+            },
+            {
+                "heading": "Scope of work",
+                "text": "Custom design and development. Responsive layouts for every screen size. Content management integration for easy updates. SEO for visibility. Social media integration. UI/UX design. Testing and quality assurance. Training and support for maintenance."
+            },
+            {
+                "heading": "Timeline",
+                "text": "Delivery time depends on the size of the project. We agree on milestones up front, and the plan stays flexible as requirements evolve."
+            },
+            {
+                "heading": "Investment",
+                "text": "Pricing depends on scope and complexity. You get a clear written quote covering design, development, testing and deployment before any work starts."
+            },
+            {
+                "heading": "Why work with me",
+                "text": "Direct communication with the person doing the work, regular progress updates, on-time delivery and thorough testing before every hand-over."
+            },
+            {
+                "heading": "Next steps",
+                "text": "Send me an enquiry with a short description of what you need. I will reply with questions, a proposed plan and a quote. Work begins after approval and an initial payment of 25%."
+            }
+        ],
+        "published": true,
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "svc_tav0uepl",
+        "title": "Graphic Design",
+        "slug": "graphic-design",
+        "icon": "palette",
+        "summary": "Logos, brand collateral and marketing visuals that turn ideas into clear, memorable visual communication.",
+        "sections": [
+            {
+                "heading": "About the service",
+                "text": "I specialise in graphic design with a keen eye for detail, turning ideas into impactful visual communication that fits your brand."
+            },
+            {
+                "heading": "Scope of work",
+                "text": "Logo design. Branding collateral such as business cards and letterheads. Marketing materials such as brochures, flyers, posters and banners. Digital graphics including social posts, web banners and email templates. Packaging design. Custom illustration."
+            },
+            {
+                "heading": "Design process",
+                "text": "We start with an in-depth conversation about your vision and goals. I present initial concepts for feedback, then refine until the design matches what you had in mind."
+            },
+            {
+                "heading": "Investment",
+                "text": "Packages cover all design concepts, revisions and final deliverables. Get in touch for a quote that fits your needs."
+            },
+            {
+                "heading": "Why work with me",
+                "text": "Creative excellence, a client-first approach, timely delivery and clear communication from first sketch to final files."
+            }
+        ],
+        "published": true,
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "svc_eh0qzbxi",
+        "title": "Software Testing",
+        "slug": "software-testing",
+        "icon": "shield",
+        "summary": "Manual and automated testing covering functionality, performance and security, so you ship with confidence.",
+        "sections": [
+            {
+                "heading": "My approach",
+                "text": "A systematic, detail-oriented process: analyse the application, find problems, and report them with actionable guidance for fixing them."
+            },
+            {
+                "heading": "Manual testing",
+                "text": "Hands-on testing to catch usability issues, functional gaps and user-experience problems."
+            },
+            {
+                "heading": "Automated testing",
+                "text": "Automated test scripts that speed up testing and keep results consistent."
+            },
+            {
+                "heading": "Performance and security",
+                "text": "Checks on responsiveness, stability and speed under load, plus security assessments to find vulnerabilities."
+            },
+            {
+                "heading": "Regression testing",
+                "text": "Verification that new changes do not break existing features."
+            },
+            {
+                "heading": "Reporting and pricing",
+                "text": "You get detailed, transparent reports throughout. Pricing depends on scope and complexity, with a clear breakdown after we discuss your needs."
+            }
+        ],
+        "published": true,
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "svc_9f9yx7t1",
+        "title": "Remote Support",
+        "slug": "remote-support",
+        "icon": "headset",
+        "summary": "Fast, friendly technical help delivered remotely: troubleshooting, setup and guidance from wherever you are.",
+        "sections": [
+            {
+                "heading": "What it covers",
+                "text": "Diagnosing and resolving software glitches, network issues and hardware problems over chat, email, phone or remote desktop."
+            },
+            {
+                "heading": "How I work",
+                "text": "I analyse the issue, find the root cause and apply an effective fix, explaining each step in plain language so you understand what changed."
+            },
+            {
+                "heading": "Tools",
+                "text": "Remote access tools let me look at the problem directly, apply fixes and guide you through troubleshooting."
+            },
+            {
+                "heading": "Commitment",
+                "text": "Patient, courteous and focused on getting you working again. Every interaction and solution is documented for future reference."
+            }
+        ],
+        "published": true,
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "svc_a2ys8gez",
+        "title": "Gaming",
+        "slug": "gaming",
+        "icon": "gamepad",
+        "summary": "I am RP_Axel: gamer, explorer of virtual worlds and storyteller. Come and play.",
+        "sections": [
+            {
+                "heading": "Player one",
+                "text": "I am RP_Axel, a gamer with a long history of exploring virtual worlds, from first-person shooters to open-world RPGs."
+            },
+            {
+                "heading": "The journey",
+                "text": "It began in the 8-bit era with Mario and Zelda and grew into online multiplayer and competitive eSports."
+            },
+            {
+                "heading": "What drives me",
+                "text": "The thrill of discovery, the camaraderie of online communities, and the satisfaction of beating a challenge that looked impossible. Gaming taught me teamwork, strategy and perseverance."
+            },
+            {
+                "heading": "Join in",
+                "text": "Whether you are a fellow gamer, a curious beginner or just want to talk about the latest releases, say hello. Let us level up."
+            }
+        ],
+        "published": true,
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    }
+]

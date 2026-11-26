@@ -1,0 +1,29 @@
+[
+    {
+        "id": "exp_gw6w09xg",
+        "role": "Founder & Lead Developer",
+        "org": "RDS Group of Tech Services",
+        "period": "Jan 2023 – Present",
+        "text": "",
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "exp_dcwsptjl",
+        "role": "Vendor",
+        "org": "College social media & admissions",
+        "period": "Sep 2021 – Present",
+        "text": "Run all of the college's social media accounts: posting content, keeping information current, maintaining the channels and connecting with prospective students.",
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    },
+    {
+        "id": "exp_ck96z2iy",
+        "role": "Full Stack Developer",
+        "org": "Freelance",
+        "period": "Current",
+        "text": "Mobile, web and design projects for clients.",
+        "createdAt": "2026-11-14T05:38:28Z",
+        "updatedAt": "2026-11-14T05:38:28Z"
+    }
+]

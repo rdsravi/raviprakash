@@ -1,0 +1,25 @@
+# Portfolio backend: Apache hardening (works on Hostinger and most shared hosts)
+Options -Indexes
+
+# Never serve configuration or hidden files
+<FilesMatch "^(config\.local\.php|config\.example\.php|\.gitignore|\.gitkeep|.*\.md)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "same-origin"
+  Header always set X-Frame-Options "DENY"
+</IfModule>
+
+# Force HTTPS (uncomment once your SSL certificate is active)
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteCond %{HTTP:X-Forwarded-Proto} !https
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
